@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+}
+
+.container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f1f1f3;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .search {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+    input {
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      padding: 10px;
+      min-width: 300px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      margin-right: 10px;
+    }
+  }
+
+  .meteo {
+    .actual-day {
+      background-color: #95a5a6;
+      border-radius: 15px;
+      padding: 20px 50px;
+      // width: 600px;
+      text-align: center;
+
+      h2 {
+        margin-bottom: 10px;
+        color: #fff;
+      }
+
+      h4 {
+        margin-bottom: 10px;
+      }
+
+      img {
+        width: 80px;
+      }
+    }
+
+    .other-days {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 1200px;
+      justify-content: space-between;
+      padding: 10px;
+      margin-top: 20px;
+
+      .day {
+        padding: 20px;
+        width: 19%;
+        // height: 200px;
+        border-radius: 15px;
+        text-align: center;
+        background-color: #aaa;
+        margin-bottom: 20px;
+
+        h3 {
+          color: #333;
+        }
+
+        h4 {
+          margin: 10px 0;
+          font-weight: normal;
+        }
+
+        img {
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+
+.map {
+  margin: 20px 0;
+}
